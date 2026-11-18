@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampung Inggris</title>
+
+    <style>
+        /* CSS DASAR */
+        * {
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'comic sans ms';
+        }
+
+        .wrapper {
+            width: 1001px;
+            margin: auto;
+            position: relative;
+        }
+
+        /* NAVBAR */
+        .logo a {
+            font-size: 20px;
+            font-family: 'comic sans ms';
+            font-weight: 800;
+            color: #411ab7;
+            float: left;
+        }
+
+        .menu {
+            float: right;
+        }
+
+        nav {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            line-height: 80px;
+            position: sticky;
+            top: 0px;
+            background-color: aliceblue;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 0px 16px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* SECTION */
+        section {
+            margin: 0px;
+            display: flex;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .kolom {
+            margin-top: 50px;
+            margin-bottom: 0px;
+        }
+
+        .kolom .deskripsi {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'comic sans ms';
+            color: #411ab7;
+        }
+
+        h2 {
+            font-family: 'comic sans ms';
+            font-weight: 700;
+            font-size: 45px;
+            margin-bottom: 30px;
+            color: #411ab7;
+            width: 100%;
+            line-height: 50px;
+        }
+
+        /* GAMBAR */
+        .gambar {
+            margin-top: 0px;
+            width: 470px;
+            height: auto;
+        }
+
+        /* TOMBOL */
+        a.tbl-one {
+            background: #0BA6DF;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 10px 15px;
+            color: aliceblue;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a.tbl-one:hover {
+            background: #FAA533;
+            text-decoration: none;
+        }
+
+        a.tbl-two {
+            background: #0BA6DF;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: aliceblue;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a.tbl-two:hover {
+            background: #FAA533;
+            text-decoration: none;
+        }
+
+        p {
+            margin: 10px 0px;
+            padding: 10px 0px;
+        }
+
+        /* TUTOR */
+        .tengah {
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .tutor-list {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 0px;
+        }
+
+        .kartu-tutor {
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        .kartu-tutor img {
+            width: 80%;
+            border-radius: 50%;
+        }
+
+        .kartu-tutor p {
+            font-family: 'comic sans ms';
+            font-weight: 800;
+            font-size: 25px;
+            text-align: center;
+            color: #411ab7;
+        }
+
+        /* PARTNER */
+        .partner-list {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .kartu-partner {
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        .kartu-partner img {
+            width: 150px;
+            border-radius: 50px;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #dedede;
+            padding: 30px 0px;
+        }
+
+        .footer {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .footer-section {
+            width: 20%;
+            margin: 0px auto;
+        }
+
+        h4 {
+            font-family: 'comic sans ms';
+            font-weight: 800;
+            font-size: 20px;
+            margin-bottom: 0px;
+            color: #411ab7;
+            width: 100%;
+            line-height: 20px;
+        }
+
+        /* COPYRIGHT */
+        #copyright {
+            text-align: center;
+            width: 100%;
+            padding: 30px 0px;
+            margin-top: 0px;
+        }
+
+        /* RESPONSIVE */
+        @media screen and (max-width: 991.98px) {
+            .wrapper {
+                width: 90%;
+            }
+
+            .logo a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav .menu {
+                width: 100%;
+                margin: 0;
+            }
+
+            nav .menu ul {
+                text-align: center;
+                margin: auto;
+                line-height: 60px;
+            }
+
+            nav .menu ul li {
+                display: inline-block;
+                float: none;
+            }
+
+            section {
+                display: block;
+            }
+
+            section img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .kartu-partner {
+                width: 50%;
+            }
+
+            .kartu-tutor {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="wrapper">
+
+            <div class="logo">
+                <a href="#">KampungInggris</a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#online">Kelas Online</a></li>
+                    <li><a href="#offline">Kelas Offline</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#about">Contact</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- WRAPPER ATAS -->
+    <div class="wrapper">
+
+        <!-- HOME -->
+        <section id="home">
+            <img src="website-e-learning/online-certification-illustration.png" class="gambar">
+
+            <div class="kolom">
+                <p class="deskripsi">
+                    Belajar Bahasa Inggris #Kapanpun
+                </p>
+
+                <h2>Always Enjoy n Happy</h2>
+
+                <p>
+                    Kursus bahasa Inggris Online & Offline.
+                    Kursus bahasa Inggris termurah dan terlengkap.
+                    Langsung belajar dari ahlinya.
+                </p>
+
+                <p>
+                    <a href="#" class="tbl-one">Ayo Bergabung</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- KELAS ONLINE -->
+        <section id="online">
+            <div class="kolom">
+                <p class="deskripsi">Untuk Pemula, Belajar dari NOL.</p>
+
+                <h2>Kelas Online</h2>
+
+                <p>
+                    Jadwal belajar Senin s/d Jumat.
+                    Hari Sabtu dan Minggu libur.
+                    Jam belajarnya fleksibel.
+                    TANPA tatap muka belajar dari NOL.
+                </p>
+
+                <p>
+                    Peserta bisa mengakses materi dan latihan
+                    soal kapan saja. Belajarnya tidak harus
+                    saat materi diajarkan.
+                </p>
+
+                <p>
+                    <a href="#" class="tbl-one">
+                        Pelajari Lebih Lanjut
+                    </a>
+                </p>
+            </div>
+
+            <img src="website-e-learning/19272332_48752.jpg" class="gambar">
+        </section>
+
+        <!-- KELAS OFFLINE -->
+        <section id="offline">
+            <div class="tengah">
+
+                <div class="kolom">
+                    <p class="deskripsi">Kelas Offline</p>
+                    <h2>Tutors terbaik</h2>
+                    <p>Kampung Inggris memiliki tutor yang berpengalaman.</p>
+                </div>
+
+                <div class="tutor-list">
+
+                    <div class="kartu-tutor">
+                        <img src="website-e-learning/wilson.jpg">
+                        <p>Joko Susilo</p>
+                    </div>
+
+                    <div class="kartu-tutor">
+                        <img src="website-e-learning/brilian.jpg">
+                        <p>Arkjati</p>
+                    </div>
+
+                    <div class="kartu-tutor">
+                        <img src="website-e-learning/emilia.jpg">
+                        <p>Raningcipta</p>
+                    </div>
+
+                    <div class="kartu-tutor">
+                        <img src="website-e-learning/wilson.jpg">
+                        <p>Rusdianto</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTNER -->
+        <section id="partners">
+            <div class="tengah">
+
+                <div class="kolom">
+                    <p class="deskripsi">Our Top Partners</p>
+                    <h2>Partners Kerjasama</h2>
+
+                    <p>
+                        Saat ini Kampung Inggris Pare sudah
+                        mempunyai kelas online ya guys!
+                        Terdapat berbagai macam kelas yang bisa diikuti.
+                    </p>
+                </div>
+
+                <div class="partner-list">
+
+                    <div class="kartu-partner">
+                        <img src="website-e-learning/logo4.png">
+                    </div>
+
+                    <div class="kartu-partner">
+                        <img src="website-e-learning/logo2.png">
+                    </div>
+
+                    <div class="kartu-partner">
+                        <img src="website-e-learning/logo3.png">
+                    </div>
+
+                    <div class="kartu-partner">
+                        <img src="website-e-learning/logo.png">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact">
+        <section id="about">
+            <div class="wrapper">
+
+                <div class="footer">
+
+                    <div class="footer-section">
+                        <h3>KampungInggris</h3>
+                        <p>
+                            Lembaga Resmi dari Kampung Inggris
+                            Pare dengan izin operasional tahun 2025.
+                        </p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>About</h3>
+                        <p>Instagram : @kampunginggris.co</p>
+                        <p>Facebook : kampunginggris.co</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <p>
+                            Jln. Flamboyan Blok T No. 12
+                            Tegalsari Tulungrejo Pare
+                        </p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Social</h3>
+                        <p>Whatsapp : 0821-1707-0407</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2025 <b>KampungInggris</b>
+        </div>
+    </div>
+
+</body>
+  </html>
+  
